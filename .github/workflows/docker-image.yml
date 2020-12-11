@@ -18,6 +18,6 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
       - uses: docker/build-push-action@v2
         with:
-          push: true  # optional, default is false
-          tags: nexcvon/ssh:latest
-          platforms: linux/amd64,linux/arm/v7 # optional
+          push: true
+          tags: nexcvon/openssh:latest
+          platforms: linux/amd64,linux/arm/v7
